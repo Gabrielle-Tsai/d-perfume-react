@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D'Perfume | Product</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <%- include('./layout/header') -%>
+
+  <div class="container-fluid bg-primary d-none d-lg-block" id="brand-nav">
+    <ul class="container px-0 list-group list-group-horizontal list-unstyled">
+      <li><button class="btn btn-primary rounded-0">CHANEL</button></li>
+      <li><button class="btn btn-primary rounded-0">Jo Malone</button></li>
+      <li><button class="btn btn-primary rounded-0">Curology</button></li>
+      <li><button class="btn btn-primary rounded-0">Dior</button></li>
+      <li><button class="btn btn-primary rounded-0">Chole</button></li>
+      <li><button class="btn btn-primary rounded-0">Zara</button></li>
+    </ul>
+  </div>
+
+  <!-- Product -->
+  <section class="product-list">
+    <div class="container">
+      <ul class="row row-cols-2 row-cols-lg-4 px-0 g-4">
+        <!-- <li class="col card border-0">
+          <a href="#" class="link-dark text-decoration-none">
+            <img src="../assets/images/laura-chouette-qoA-Vg06kdE-unsplash.jpg" alt="Poppy & Barley"
+              class="card-img-top rounded-0 object-fit-cover object-position-center">
+            <h5 class="card-title fw-bold mb-0">Poppy & Barley</h5>
+          </a>
+          <div class="card-body p-0">
+            <div class="card-text mb-1">Jo Malone</div>
+            <p>NT$1,580<span class="text-muted text-decoration-line-through ms-2">NT$1,580</span></p>
+          </div>
+          <div class="card-function">
+            <button type="button" class="btn btn-sm p-0 text-center btn-white">
+              <span class="material-icons material-symbols-outlined text-primary">
+                favorite
+              </span>
+            </button>
+            <button type="button" class="btn btn-sm p-0 text-center btn-white">
+              <span class="material-icons material-symbols-outlined text-primary">
+                shopping_cart
+              </span>
+            </button>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+  </section>
+
+  <ul class="page list-unstyled">
+    <li class="page-item"><a href="#" class="page-link active">1</a></li>
+    <li class="page-item"><a href="#" class="page-link">2</a></li>
+    <li class="page-item"><a href="#" class="page-link">3</a></li>
+  </ul>
+
+  <section class="subscribe">
+    <div class="container h-100">
+      <div class="d-flex flex-column justify-content-end h-100">
+        <h2 class="subscribe-title">記得<br>訂閱以獲取更多資訊！</h2>
+        <div class="input-group mb-3 subscribe-form">
+          <input type="text" class="form-control border border-2 border-primary rounded-start p-3"
+            placeholder="Your email address" aria-label="Your email address" aria-describedby="button-addon2">
+          <button class="btn btn-primary text-white rounded-end subscribe-btn" type="button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include('./layout/footer') -%>
+  <script type="module" src="../main.js"></script>
+  <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  <script src="../assets/js/product.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+.banner {
+  background: url('../images/home-banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+  height: 480px;
+}
+
+@media (min-width: 992px) {
+  .banner {
+    height: 870px;
+  }
+}
+
+.intro {
+  width: 445px;
+  max-width: 100%;
+}
+
+.intro-text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
+@media (min-width: 992px) {
+  .intro-text-block {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro-text-block {
+    margin-left: auto;
+  }
+}
+
+.training-btn {
+  transition: ease-in 0.3s;
+}
+
+.training-btn:hover {
+  background: #0000000D;
+  color: #000;
+}
+
+.product-recommend .card .card-img-top {
+  height: 350px;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .product-recommend .card .card-img-top {
+    height: 540px;
+  }
+}
