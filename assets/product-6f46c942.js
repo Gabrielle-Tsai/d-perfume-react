@@ -1,4 +1,4 @@
-import"./bootstrap.min-2ae76945.js";import"https://unpkg.com/axios@1.6.7/dist/axios.min.js";const r=document.querySelector(".navbar-nav li:first-child a");r.classList.add("active");let c,o="";axios.get("https://ec-course-api.hexschool.io/v2/api/hex-project/products/all").then(function(e){c=e.data.products,d()});function d(){const e=document.querySelector(".product-list ul");c.forEach(function(t,s){o+=`<li class="col card border-0">
+import"./bootstrap.min-2ae76945.js";import"https://unpkg.com/axios@1.6.7/dist/axios.min.js";const r=document.querySelector(".navbar-nav li:first-child a");r.classList.add("active");let c,n="";axios.get("https://ec-course-api.hexschool.io/v2/api/hex-project/products/all").then(function(e){c=e.data.products,d()});function d(){const e=document.querySelector(".product-list ul");c.forEach(function(t,s){n+=`<li class="col card border-0">
           <a href="#" class="link-dark text-decoration-none">
             <img src="${t.image}" alt="Poppy & Barley"
               class="card-img-top rounded-0 object-fit-cover object-position-center">
@@ -20,4 +20,4 @@ import"./bootstrap.min-2ae76945.js";import"https://unpkg.com/axios@1.6.7/dist/ax
               </span>
             </button>
           </div>
-        </li>`}),e.innerHTML=o,p()}let i=localStorage.getItem("likeList").split(",")||[];function p(){document.querySelectorAll(".like-btn").forEach(function(t,s){t.addEventListener("click",function(u){let a=t.dataset.productid,n=!1;i.forEach(function(l,m){if(l===a){n=!0;return}}),n||(i.push(a),localStorage.setItem("likeList",i))})})}
+        </li>`}),e.innerHTML=n,u()}let i=[];localStorage.getItem("likeList")!==null&&(i=localStorage.getItem("likeList").split(","));function u(){document.querySelectorAll(".like-btn").forEach(function(t,s){t.addEventListener("click",function(p){let a=t.dataset.productid,o=!1;i.forEach(function(l,m){if(l===a){o=!0;return}}),o||(i.push(a),localStorage.setItem("likeList",i))})})}
