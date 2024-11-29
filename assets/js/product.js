@@ -41,7 +41,10 @@ function renderProductList() {
     listenLikeBtn()
 }
 
-let likeList = localStorage.getItem('likeList').split(',') || []
+let likeList = []
+if (localStorage.getItem('likeList') !== null) {
+  likeList = localStorage.getItem('likeList').split(',')
+}
 
 function listenLikeBtn() {
     const likeBtns = document.querySelectorAll('.like-btn')
